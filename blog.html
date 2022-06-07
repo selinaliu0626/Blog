@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width =device-width,initial-scale =1.0">
+    <title>BlogContent</title>
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">
+    <link rel="stylesheet" href="static/css/me.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<!--navigation-->
+<nav class="ui inverted attached segment m-padded-tb-mini">
+    <div class="ui container">
+        <div class ="ui inverted secondary stackable menu">
+            <h2 class ="ui teal header m-padded-tb-small">Selina's Blog</h2>
+            <a href="#" class="m-item m-mobile-hide item"><i class="home icon"></i> Home Page</a>
+            <a href="#" class="m-item m-mobile-hide item item"><i class="idea icon"></i>Category</a>
+            <a href="#" class="m-item m-mobile-hide item item"><i class="tags icon"></i>Label</a>
+            <a href="#" class=" m-item m-mobile-hide item item"><i class="tags icon"></i>TimeLine</a>
+            <a href="#" class="m-item m-mobile-hide item item"><i class="info icon"></i>About me</a>
+            <div class ="right item">
+                <div class ="ui icon input">
+                    <input type="text" placeholder="Search....">
+                    <i class="search link icon"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="ui menu toggle inverted icon hex button m-top-right m-mobile-show">
+    <i class="sidebar icon"></i>
+    </a>
+</nav>
+<!--context-->
+<div class =" m-padded-tb-large m-container-small">
+    <div class="ui container">
+        <div class="ui top attached segment">
+            <!----header of body------>
+            <div class="ui  horizontal link list">
+                <div class="item">
+                    <img src="https://unsplash.it/100/100?image=1035" alt="" class="ui avatar image">
+                    <div class="content">
+                        <a href="" class="header">Selina Liu</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <i class="calendar icon"></i>2022-03-10
+                </div>
+                <div class="item">
+                    <i class="eye icon"></i>2324
+                </div>
+            </div>
+
+        </div>
+        <div class="ui attached segment">
+            <img src="https://unsplash.it/800/450?image=1035"  alt="" class="ui fluid rounded image">
+        </div>
+        <div class="ui attached segment">
+            <!-----context----inbody----->
+            <div class="ui right aligned basic segment">
+            <div class="ui orange basic label">Original</div>
+            </div>
+        <h2 class="ui center aligned header">Some Ideas to Improve Google map </h2>
+        <div id="content" class="m-padded-tb-large">
+            <p>Many people complained about Google map,after did some research and combined with my
+                own experience, I had some ideas to add some new features on it.</p>
+            <h4>Problems</h4>
+            <p>
+                (1)	Confused when drive to the fork in the road.
+                (2)	Can’t stop and change destination in the highway
+                (3)	Miss the right exit
+                (4)	Get the wrong information from google map, such as parking info
+                (5)	Wrong position showed in the map, the data latency?
+                (6)	Can’t distinguish other languages for the user
+
+            </p>
+            <h4>Goals</h4>
+            <p>
+                (1)	Customer could choose the right path at the fork in the road
+                (2)	Customers can use service without touch
+                (3)	Customer could get in time reminder for exit in highway
+                (4)	Exact information providers, such as parking
+                (5)	Increase the accuracy for navigation
+                (6)	Some other service, weather reminder, language services, etc.
+            </p>
+            <h5>To reach these goals, I think we could </h5>
+            <p>
+                (1)	show pictures with arrows to help customer find the right way at the fork
+                (2)	set a voice assistant, to help people get the service without touch
+                (3)	voice assistant will reminder you with every exit in highway
+                (4)	Collect more information and audit to make sure the information provide to customers are correct, also customers could report wrong info to the development team.
+                (5)	Use multiple way to locate car, WIFI, GPS, radio, etc., and navigation, in case one of them are useless or not correct right now.
+                (6)	More preference setting available, for the add on service.
+
+            </p>
+            <h5>Key customer segments:</h5>
+            <p>
+                (1)	Self-driving travelers: people who self-driving and travel a lot must use navigation app to help find the way
+                (2)	People with poor sense of direction: people with poor sense of direction may could not drive without navigation app.
+
+            </p>
+            <h4>Scenarios</h4>
+            <h5 class="ui center aligned header">Self -driving to Children’s Museum</h5>
+            <p>
+                    Mark saw some good activities has been post in Boston children`s museum, since his home is only 30 minutes’ driving to Boston children’s museum,
+                he takes his kids to take part in these activities. Even he drives a lot, but the roads in Boston still confuse him. So, he opens the google map, and follow the reminds of it.
+            </p>
+            <p>He is very satisfied with the journey first, he forgets refill the gas, google map can easily find nearest gas station for him,
+                but during his way to Boston, his kids want to eat DQ, he wants to find his closest DQ in highway, but unfortunately he cannot change destination,
+                unless he stops, and choose it by hand,  that is too dangerous when you do this way, so he could only persuade his kids to wait him out of the highway,
+                then he could choose a certain store. The younger son cried about it, but that is the safest choice he can make.
+            </p>
+            <p>When he is close to children`s museum, he finds the suggest way is on construction, there is some staff hold a sign and tell them to go another way,
+                he is first arrived there, so he is upset to the result, and hope the road will not be too far to go back. Luckily it is not that far, when he finally arrived at the museum,
+                the staff told him that will be 25 to parking. He is so surprised that parking is so expensive, so he checks for google map, it does have a suggestion for parking, he drive ahead to there,
+                but the sign says south end residence only. He is so disappointing about the wrong information. When he finally finds the parking lot, it begins to rain heavily,
+                he is ok with the rain, but he worried his kids will get cold without umbrella.
+            </p>
+            <p>< magic happens ></p>
+            <p>When open the Google map, it will remind the weather today, Mark gets the news that it will snow in afternoon, so he takes snow coat for kids. And it could change destination by communicate with app, no worried for stop in the highway.
+                Also, it will show parking zones near your destination, and has specific information about each zone correctly. </p>
+            <h5 class="ui center aligned header">Drive to the outlet</h5>
+            <p>
+                Anna lives in north gate, she has a short-long weekend for their well-being day on Friday, she thinks it is a great opportunity to shopping in the outlets, because there are almost too many people show there in weekends.
+                After some simple dress up, she drives to Outlets which is about 40 minutes away from her home
+            </p>
+            <p>
+                She starts the car, even she has been there for couple times, but she still confused how to drive there.
+                When she lunch the app, she wants to input the correct name for the destination , but somehow,
+                she forget the English for outlet, because she also always call it”奥莱“ instead, so she need to use translator to translate first, then she can find the right place. When she uses google map to navigation,
+                it been quite easy for the way from her home to 5 road, because google map has reminds for every turn.
+                But when she drives in 5 road, google map shows there is some traffic jam in the next section and suggest her to drive out the 5 road and choose the normal road to avoid traffic jam. She is a little doubt about this,
+                but she chooses to trust google map and exit the 5 road, but she still can see the situation on 5 road,
+                she is certainly true that there is no traffic jam on it. And she has no need to exit and drive to the small road which has more traffic lights and more complex situations.
+                So, she chooses to select the road which let her go back to 5 road. During her way to outlets, there is no voice reminder for the fork in the road or the exit,
+                she needs to check the screen for the clear information and try to recognize the exact number for her exit, it always makes her direction crooked a little,
+                even one time, she was out of her lane and too closed to other people`s car. When she is very closed to outlets, google map tell her the destination is on her left side,
+                but she is on the right side of the road, and there is two solid yellow line in the middle of the road, that means she cannot just turn right to the outlet,
+                she needs to find somewhere allow her to turn U-turn, but google map does not show the right route. She does not want to stop and choose the route,
+                so she just keeps go forward and let google map know her is still trying to find her way, after 1 minutes’ drive,
+                when outlet is obvious not on her right side, google map give the right way to outlet.
+            </p>
+            <p> < magic happens > </p>
+            <p>
+                Google map know what means ”奥莱”， and provide the correct info for traffic jam, and always point to the most effective way for people, Emily receives each voice reminder for each crossroad or fork in the road, and it also reminder you when you need to exit in next section. When she is on the opposite direction of the destination, google map will choose somewhere to make U-turn or make left turn to other entry.
+
+            </p>
+            <h3> Functional requirements:</h3>
+            <p>
+                (1)	Should give the more information for customer when come to the fork in the road
+                (2)	Provide correct park info
+                (3)	Provide Manu(pictures) for restaurants
+                (4)	Show the correct route to the entry of the destination
+                (5)	Reflect the real data
+                (6)	 change destination without touch
+                (7)	Show the nearest gas station/ restaurant without touch
+                (8)	show available taxi/uber
+                (9)	Set familiar area, could decrease the instructions
+                (10)	Choose style for navigation, detailed/ abstract
+                (11)	Tow or other road assistant info provide for this area
+                (12)	Highlight the available restroom while walking mode is use
+                (13)	For the destination, show every entry for customer to choose
+                (14)	According to the user’s daily habit, show the commendation choice
+                (15)	Weather reminder
+                (16)	SOS service
+                (17)	Locate/detect missing car
+                (18)	Automatic recognition of input language
+                (19)	Recommended Tourist Spots, detail information provides
+                (20)	Book hotel directly in google map
+
+            </p>
+            <h3> Non-functional requirements </h3>
+            <p>
+                (1)	Performance requirements: after request the service, the response time should limit in 0.1s
+                (2)	Performance requirements: Improve the accuracy of the data
+                (3)	Availability: decrease the reliability to signal quality
+                (4)	Correctness: return the correct result for customer
+                (5)	Security: customer’s home/work address are safe or info leakage
+                (6)	Security: customer’s preference only available for their self
+                (7)	Safety: detect the abnormal activities with the account
+                (8)	Interoperability: Could integrate with other software or apps
+                (9)	Portability: could work with any environments
+                (10)	Robustness: people may have some spell mistakes or other wrong input, try to match the possible choices
+            </p>
+        </div>
+            <div class="m-padded-lr-responsive">
+                <div class="ui basic teal left pointing label">Software Modeling</div>
+            </div>
+
+
+            <!---thumbs up----->
+            <div class="ui center aligned segment">
+            <button id="pay" style="font-size:24px;color:red "> <i class="fa fa-thumbs-up"></i></button>
+            </div>
+            <!----QRcode---->
+            <div class="ui payQR flowing popup transition hidden">
+
+            <div class="ui orange basic label">
+                <div class="ui images" style="font-size:inherit !important;">
+                    <div class="image">
+                        <img src="static/images/QRcode.jpg " alt="" class="ui rounded bordered image" style="width: 120px">
+                        <div>WeChat</div>
+                    </div>
+                    <div class="image">
+                        <img src="static/images/QRcode.jpg " alt="" class="ui rounded bordered image" style="width: 120px">
+                        <div>WeChat</div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class=" ui attached positive message">
+            <div class="ui middle aligned grid">
+                <div class="eleven wide column">
+                    <li>Author: Selina Liu(Contact Author)</li>
+                    <li>Post Time:2022-03-10</li>
+                    <li>Copyright:Not for business use </li>
+
+                </div>
+                <div class="five wide column">
+                    <img src="static/images/QRcode.jpg" alt="" class="ui right floated rounded bordered image" style="width:110px">
+                </div>
+            </div>
+        </div>
+        <div class="ui bottom attached segment">
+            <!----message zone---->
+            <div class="ui gray segment">
+                <div class="ui comments">
+                    <h3 class="ui dividing header">Comments</h3>
+                    <div class="comment">
+                        <a class="avatar" one-link-mark="yes">
+                            <img src="https://unsplash.it/100/100?image=1027" alt="" class="ui avatar image">
+                        </a>
+                        <div class="content">
+                            <a class="author" one-link-mark="yes">Matt</a>
+                            <div class="metadata">
+                                <span class="date">Today at 5:42pm</span>
+                            </div>
+                            <div class="text">Awesome! </div>
+                            <div class="actions">
+                                <a class="reply" one-link-mark="yes">Reply</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <a class="avatar" one-link-mark="yes">
+                            <img src="https://unsplash.it/100/100?image=1035" alt="" class="ui avatar image">
+                        </a>
+                        <div class="content">
+                            <a class="author" one-link-mark="yes">Elliot Fu</a>
+                            <div class="metadata">
+                                <span class="date">Yesterday at 12:30pm</span>
+                            </div>
+                            <div class="text">
+                                <p>Very useful,Thank you!</p>
+                            </div>
+                            <div class="actions">
+                                <a class="reply" one-link-mark="yes">Reply</a>
+                            </div>
+                        </div>
+                        <div class="comments">
+                            <div class="comment">
+                                <a class="avatar" one-link-mark="yes">
+                                    <img src="https://unsplash.it/100/100?image=1009" alt="" class="ui avatar image">
+                                </a>
+                                <div class="content">
+                                    <a class="author" one-link-mark="yes">Jenny Hess</a>
+                                    <div class="metadata">
+                                        <span class="date">Just now</span>
+                                    </div>
+                                    <div class="text">You are always so right! :) </div>
+                                    <div class="actions">
+                                        <a class="reply" one-link-mark="yes">Reply</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <a class="avatar" one-link-mark="yes">
+                            <img src="https://unsplash.it/100/100?image=1012"alt="" class="ui avatar image">
+                        </a>
+                        <div class="content">
+                            <a class="author" one-link-mark="yes">Joe Henderson</a>
+                            <div class="metadata">
+                                <span class="date">5 days ago</span>
+                            </div>
+                            <div class="text">Awesome,Thanks dude! </div>
+                            <div class="actions">
+                                <a class="reply" one-link-mark="yes">Reply</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui form">
+                        <div class="field">
+                            <textarea name="content" placeholder=" write your comments..."></textarea>
+                        </div>
+                        <div class="fields">
+                            <div class="field m-mobile-wide m-margin-bottom-mini">
+                                <div class="ui left icon input">
+                                    <i class="user icon"></i>
+                                <input type="text" name="nickname" placeholder="Name">
+                            </div>
+                            </div>
+                            <div class="field m-mobile-wide  m-margin-bottom-mini">
+                                <div class="ui left icon input">
+                                    <i class="mail icon"></i>
+                                <input type="text" name="email" placeholder="Email">
+                                </div>
+                            </div>
+                             <div class="field m-margin-bottom-mini m-mobile-wide ">
+                               <button class="ui teal button m-mobile-wide "><i class="edit icon"></i>Add Reply</button>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+        <!--footer-->
+<footer class="ui inverted vertical segment m-padded-tb-massive">
+    <div class="ui center aligned container">
+        <div class ="ui stackable inverted divided grid">
+            <div class ="three wide column">
+                <img src="./static/images/QRcode.jpg" class="ui rounded image" alt="" style="width:120px ">
+            </div>
+                <div class ="three wide column">
+                    <h4 class ="ui inverted header">Recent Posts</h4>
+                    <div class="ui inverted link list">
+                        <a href ="#" class="item">Dynamic Programming</a>
+                        <a href ="#" class="item">Depth-first Search</a>
+                         <a href ="#" class="item">Binary Tree</a>
+                    </div>
+                </div>
+                <div class ="three wide column">
+                    <h4 class ="ui inverted header">Contact Me</h4>
+                    <div class="ui inverted link list">
+                        <a href ="#" class="item">Email:selinaliu0626@gmail.com</a>
+                        <a href ="#" class="item">State:Washington</a>
+                    </div>
+
+                </div>
+                <div class ="seven wide column">
+                    <h4 class ="ui inverted header  m-text-thin m-text-spaced">About My Blog</h4>
+                    <p class="m-opacity-mini m-text-thin m-text-spaced" >
+                        This is my personal blog, I`d like to share some notes about coding, software engineering and
+                        also  personal thoughts about daily life, these are only for me to record my life, hope it may help you as well.
+                    </p>
+
+                </div>
+
+        </div>
+        <div class="ui inverted section divider"></div>
+        <p class= "m-text-thin m-text-spaced m-opacity-small">Copyright@ 2022-2024 Designed by Selina</p>
+    </div>
+
+</footer>
+</body>
+<script src="http://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+<script src="http://cdn.jsdelivr.net/semantic-ui/2.2.4/semaintic.min.js"></script>
+<!----jquery to handle m-mobile hide case----->
+<script>
+    $('.menu.toggle').click(function (){
+        $('.m-item').toggleClass('m-mobile-hide');
+    });
+    $('#pay').popup({
+        popup: $('.payQR.popup'),
+        on:'click',
+        position:'bottom center'
+    });
+</script>
+
+</html>
